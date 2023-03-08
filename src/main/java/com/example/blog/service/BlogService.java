@@ -1,5 +1,7 @@
 package com.example.blog.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.blog.dto.Result;
 import com.example.blog.pojo.Blog;
 import com.baomidou.mybatisplus.extension.service.IService;
 
