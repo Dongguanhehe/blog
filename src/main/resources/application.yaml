@@ -1,0 +1,30 @@
+#以下为开发环境配置文件
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/blog?characterEncoding=utf8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #解决swagger和springBoot版本冲突
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  redis:
+    host: 43.138.77.39
+    port: 6379
+    password: 123456
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 100ms
+
+# 配置MyBatis日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+server:
+  port: 8880
